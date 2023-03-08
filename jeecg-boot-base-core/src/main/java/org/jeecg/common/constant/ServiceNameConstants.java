@@ -20,8 +20,7 @@ package org.jeecg.common.constant;
 
 /**
  * @author scott
- * @date 2019年05月18日
- * 服务名称
+ * @date 2019年05月18日 服务名称
  */
 public interface ServiceNameConstants {
 
@@ -29,18 +28,22 @@ public interface ServiceNameConstants {
 	 * 微服务名：系统管理模块
 	 */
 	String SERVICE_SYSTEM = "jeecg-system";
+
 	/**
 	 * 微服务名： demo模块
 	 */
 	String SERVICE_DEMO = "jeecg-demo";
+
 	/**
 	 * 微服务名：online在线模块
 	 */
 	String SERVICE_ONLINE = "jeecg-online";
+
 	/**
 	 * 微服务名：OA模块
 	 */
 	String SERVICE_EOA = "jeecg-eoa";
+
 	/**
 	 * 微服务名：表单设计模块
 	 */

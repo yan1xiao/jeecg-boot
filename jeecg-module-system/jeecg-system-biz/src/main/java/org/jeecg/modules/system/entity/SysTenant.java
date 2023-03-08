@@ -12,125 +12,125 @@ import java.util.Date;
 
 /**
  * 租户信息
+ *
  * @author: jeecg-boot
  */
 @Data
 @TableName("sys_tenant")
 public class SysTenant implements Serializable {
 
-    private static final long serialVersionUID = 1L;
+	private static final long serialVersionUID = 1L;
 
-    /**
-     * 编码
-     */
-    private Integer id;
-    
-    /**
-     * 名称
-     */
-    private String name;
-    
+	/**
+	 * 编码
+	 */
+	private Integer id;
 
-    /**
-     * 创建人
-     */
-    private String createBy;
+	/**
+	 * 名称
+	 */
+	private String name;
 
-    /**
-     * 创建时间
-     */
-    @JsonFormat(timezone = "GMT+8",pattern = "yyyy-MM-dd HH:mm:ss")
-    @DateTimeFormat(pattern="yyyy-MM-dd HH:mm:ss")
-    private Date createTime;
+	/**
+	 * 创建人
+	 */
+	private String createBy;
 
-    /**
-     * 开始时间
-     */
-    @JsonFormat(timezone = "GMT+8",pattern = "yyyy-MM-dd HH:mm:ss")
-    @DateTimeFormat(pattern="yyyy-MM-dd HH:mm:ss")
-    private Date beginDate;
+	/**
+	 * 创建时间
+	 */
+	@JsonFormat(timezone = "GMT+8", pattern = "yyyy-MM-dd HH:mm:ss")
+	@DateTimeFormat(pattern = "yyyy-MM-dd HH:mm:ss")
+	private Date createTime;
 
-    /**
-     * 结束时间
-     */
-    @JsonFormat(timezone = "GMT+8",pattern = "yyyy-MM-dd HH:mm:ss")
-    @DateTimeFormat(pattern="yyyy-MM-dd HH:mm:ss")
-    private Date endDate;
+	/**
+	 * 开始时间
+	 */
+	@JsonFormat(timezone = "GMT+8", pattern = "yyyy-MM-dd HH:mm:ss")
+	@DateTimeFormat(pattern = "yyyy-MM-dd HH:mm:ss")
+	private Date beginDate;
 
-    /**
-     * 状态 1正常 0冻结
-     */
-    @Dict(dicCode = "tenant_status")
-    private Integer status;
+	/**
+	 * 结束时间
+	 */
+	@JsonFormat(timezone = "GMT+8", pattern = "yyyy-MM-dd HH:mm:ss")
+	@DateTimeFormat(pattern = "yyyy-MM-dd HH:mm:ss")
+	private Date endDate;
 
-    /**
-     * 所属行业
-     */
-    @Dict(dicCode = "trade")
-    private String trade;
+	/**
+	 * 状态 1正常 0冻结
+	 */
+	@Dict(dicCode = "tenant_status")
+	private Integer status;
 
-    /**
-     * 公司规模
-     */
-    @Dict(dicCode = "company_size")
-    private String companySize;
+	/**
+	 * 所属行业
+	 */
+	@Dict(dicCode = "trade")
+	private String trade;
 
-    /**
-     * 公司地址
-     */
-    private String companyAddress;
+	/**
+	 * 公司规模
+	 */
+	@Dict(dicCode = "company_size")
+	private String companySize;
 
-    /**
-     * 公司logo
-     */
-    private String companyLogo;
+	/**
+	 * 公司地址
+	 */
+	private String companyAddress;
 
-    /**
-     * 门牌号
-     */
-    private String houseNumber;
+	/**
+	 * 公司logo
+	 */
+	private String companyLogo;
 
-    /**
-     * 工作地点
-     */
-    private String workPlace;
+	/**
+	 * 门牌号
+	 */
+	private String houseNumber;
 
-    /**
-     * 二级域名(暂时无用,预留字段)
-     */
-    private String secondaryDomain;
+	/**
+	 * 工作地点
+	 */
+	private String workPlace;
 
-    /**
-     * 登录背景图片(暂时无用，预留字段)
-     */
-    private String loginBkgdImg;
+	/**
+	 * 二级域名(暂时无用,预留字段)
+	 */
+	private String secondaryDomain;
 
-    /**
-     * 职级
-     */
-    @Dict(dicCode = "company_rank")
-    private String position;
+	/**
+	 * 登录背景图片(暂时无用，预留字段)
+	 */
+	private String loginBkgdImg;
 
-    /**
-     * 部门
-     */
-    @Dict(dicCode = "company_department")
-    private String department;
-    
-    @TableLogic
-    private Integer delFlag;
+	/**
+	 * 职级
+	 */
+	@Dict(dicCode = "company_rank")
+	private String position;
 
-    /**更新人登录名称*/
-    private String updateBy;
-    
-    /**更新日期*/
-    @JsonFormat(timezone = "GMT+8",pattern = "yyyy-MM-dd HH:mm:ss")
-    @DateTimeFormat(pattern="yyyy-MM-dd HH:mm:ss")
-    private Date updateTime;
+	/**
+	 * 部门
+	 */
+	@Dict(dicCode = "company_department")
+	private String department;
 
-    /**
-     * 允许申请管理员 1允许 0不允许
-     */
-    private Integer applyStatus;
-    
+	@TableLogic
+	private Integer delFlag;
+
+	/** 更新人登录名称 */
+	private String updateBy;
+
+	/** 更新日期 */
+	@JsonFormat(timezone = "GMT+8", pattern = "yyyy-MM-dd HH:mm:ss")
+	@DateTimeFormat(pattern = "yyyy-MM-dd HH:mm:ss")
+	private Date updateTime;
+
+	/**
+	 * 允许申请管理员 1允许 0不允许
+	 */
+	private Integer applyStatus;
+
 }
